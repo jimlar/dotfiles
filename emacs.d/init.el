@@ -1,4 +1,3 @@
-
 ; ELPA
 (when
     (load

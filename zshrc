@@ -44,6 +44,7 @@ export PATH=/home/jimmy/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sb
 source /etc/profile.d/apache-ant.sh
 
 alias open=gnome-open
+alias emacs='emacs -nw'
 
 export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 
