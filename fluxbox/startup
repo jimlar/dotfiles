@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/jimmy/.Xmodmap"
+#setxkbmap -layout se -model macintosh
+
+# Start gnome keyring for evolution - with SLIM now
+#eval "`gnome-keyring-daemon`"
+#export GNOME_KEYRING_CONTROL
+#export SSH_AUTH_SOCK
+#export GPG_AGENT_INFO
+#export GNOME_KEYRING_PID
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+fbsetbg -l
+sh -c "sleep 2s; conky" &
+
+xset r rate 200 50
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+#exec fluxbox
+# or if you want to keep a log:
+exec fluxbox -log "/home/jimmy/.fluxbox/log"

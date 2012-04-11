@@ -1,0 +1,68 @@
+
+urxvt*foreground: #f2f2f2
+#urxvt*background: #2d0922
+urxvt*background: #202020
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #6c6c6c
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #a9cdeb
+urxvt*color5:    #ea96eb
+urxvt*color6:    #c9caec
+urxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #f99286
+urxvt*color10:    #c3f786
+urxvt*color11:    #fcfbcc
+urxvt*color12:    #b6defb
+urxvt*color13:    #fba1fb
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #e2e2e2
+
+urxvt*scollbar: false
+urxvt*internalborder: 0
+urxvt.perl-ext-common:  default,tabbed
+
+! scrollbar style - rxvt (default), plain (most compact), next, or xterm
+urxvt*scrollstyle:plain
+urxvt*scrollbar_right:	true
+urxvt*saveLines: 100000
+
+urxvt.meta8: true
+
+urxvt*scrollTtyOutput:      false
+urxvt*scrollWithBuffer:     true
+urxvt*scrollTtyKeypress:    true
+
+! This does not seem to work, something wrong with the alt key?
+urxvt.smallfont_key: 	Right
+urxvt.bigfont_key: 	Left
+Rxvt.font: -misc-fixed-medium-r-normal--13-120-75-75-c-70-iso8859-1
+Rxvt.font1: -misc-nil-medium-r-normal--2-20-75-75-c-10-misc-fontspecific
+Rxvt.font2: -misc-fixed-medium-r-normal--7-70-75-75-c-50-iso8859-1
+Rxvt.font3: -misc-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1
+Rxvt.font4: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
+Rxvt.font5: -misc-fixed-medium-r-normal--20-140-100-100-c-100-iso8859-1
+Rxvt.font6: -sony-fixed-medium-r-normal--24-170-100-100-c-120-iso8859-1

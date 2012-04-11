@@ -1,0 +1,45 @@
+#avoid flicker
+double_buffer yes
+
+#own window to run simultanious 2 or more conkys
+own_window  yes
+own_window_transparent yes
+own_window_type panel
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager 
+
+#borders
+draw_borders no
+border_margin 1
+
+#shades
+draw_shades yes
+
+#position
+gap_x 6
+gap_y 6
+alignment top_left
+
+#behaviour
+update_interval 1
+
+#colour
+default_color  9f907d
+
+#default_shade_color 000000
+own_window_colour 404040
+#own_window_colour 3d352a
+
+#font
+use_xft yes
+xftfont bauhaus:pixelsize=11
+
+#to prevent window from moving
+use_spacer no
+minimum_size 1440 0
+
+#mpd
+#mpd_host localhost
+#mpd_port 6600
+
+TEXT
+  ${time %d %B} ${color D7D3C5}${time  %H:%M}  |  ${color}up: ${color D7D3C5}${uptime_short}  |  ${color}cpu: ${color D7D3C5}${cpu}%   ${color}${cpugraph 10,80 AEA08E 9F907D}  ${color D7D3C5}${freq_g}/${freq_g 2}  |  ${color }mem: ${color D7D3C5}$mem/$memmax - $memperc%  |  ${color }net: ${color D7D3C5}${font}${downspeed wlan0}/s ${color}down${color D7D3C5} ${upspeed wlan0}/s ${color}up${color D7D3C5}  |  ${color}battery: ${color D7D3C5} ${battery_short} ${color}-${color D7D3C5} ${battery_time}  |  ${color}desktop: ${color D7D3C5}${desktop_name}  |  ${color}wlan: ${color D7D3C5}${wireless_essid wlan0} (${wireless_bitrate wlan0})
