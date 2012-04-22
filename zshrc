@@ -48,4 +48,6 @@ alias emacs='emacs -nw'
 
 export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 
+export EDITOR=emacs
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into shell session
