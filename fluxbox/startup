@@ -28,6 +28,9 @@ xmodmap "/home/jimmy/.Xmodmap"
 #sh- c "sleep 2s; fbsetbg -l" %
 sh -c "sleep 2s; conky" &
 
+nm-applet &
+pidgin &
+
 xset r rate 200 50
 
 # And last but not least we start fluxbox.
