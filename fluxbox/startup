@@ -23,7 +23,9 @@ xmodmap "/home/jimmy/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 
-fbsetbg -l
+/usr/lib/gnome-settings-daemon/gnome-settings-daemon &
+
+#sh- c "sleep 2s; fbsetbg -l" %
 sh -c "sleep 2s; conky" &
 
 xset r rate 200 50

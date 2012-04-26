@@ -123,8 +123,8 @@ Control Mod4 F12 :TakeToWorkspace 12
 # Jimmys stuffz
 Control Mod1 X :MaximizeWindow
 Control Mod1 Escape :ExecCommand xlock
-#Control Mod1 Return :ExecCommand gnome-terminal
-Control Mod1 Return :ExecCommand urxvt
+Control Mod1 Return :ExecCommand gnome-terminal
+#Control Mod1 Return :ExecCommand urxvt
 #Control Mod1 F :ExecCommand firefox
 #Control Mod1 I :ExecCommand /home/jimmy/bin/idea
 
