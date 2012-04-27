@@ -147,3 +147,6 @@ Mod4 8 :Workspace 8
 Mod4 9 :Workspace 9
 Mod4 0 :Workspace 10
 
+# Command - tab works as alt-tab
+Mod4 Tab :NextWindow {groups} (workspace=[current])  !! FBCV13 !!
+Mod4 Shift Tab :PrevWindow {groups} (workspace=[current])  !! FBCV13 !!
