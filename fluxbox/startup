@@ -31,6 +31,8 @@ sh -c "sleep 2s; conky" &
 nm-applet &
 pidgin &
 
+~/.dropbox-dist/dropboxd &
+
 xset r rate 200 50
 
 # And last but not least we start fluxbox.
