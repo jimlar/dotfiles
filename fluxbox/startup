@@ -25,6 +25,9 @@ xmodmap "/home/jimmy/.Xmodmap"
 
 /usr/lib/gnome-settings-daemon/gnome-settings-daemon &
 
+# To enable modifying network settings
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 #sh- c "sleep 2s; fbsetbg -l" %
 sh -c "sleep 2s; conky" &
 
