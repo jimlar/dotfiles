@@ -20,7 +20,8 @@ gap_y 6
 alignment top_left
 
 #behaviour
-update_interval 1
+update_interval 0.2
+update_interval_on_battery 2
 
 #colour
 default_color  9f907d
@@ -42,4 +43,4 @@ minimum_size 1440 0
 #mpd_port 6600
 
 TEXT
-  ${time %d %B} ${color D7D3C5}${time  %H:%M}  |  ${color}up: ${color D7D3C5}${uptime_short}  |  ${color}cpu: ${color D7D3C5}${cpu}%   ${color}${cpugraph 10,80 AEA08E 9F907D}  ${color D7D3C5}${freq_g}/${freq_g 2}  |  ${color }mem: ${color D7D3C5}$mem/$memmax - $memperc%  |  ${color }net: ${color D7D3C5}${font}${downspeed wlan0}/s ${color}down${color D7D3C5} ${upspeed wlan0}/s ${color}up${color D7D3C5}  |  ${color}battery: ${color D7D3C5} ${battery_short} ${color}-${color D7D3C5} ${battery_time}  |  ${color}workspace: ${color D7D3C5}${desktop_name}  |  ${color}wlan: ${color D7D3C5}${wireless_essid wlan0} (${wireless_bitrate wlan0})
+  ${time %d %B} ${color D7D3C5}${time  %H:%M}  |  ${color}cpu: ${color D7D3C5}${cpu}%   ${color}${cpugraph 10,60 AEA08E 9F907D}  ${color D7D3C5}${freq_g}/${freq_g 2}/${freq_g 3}/${freq_g 4}  |  ${color }mem: ${color D7D3C5}$mem/$memmax - $memperc%  ${if_up wlan0}|  ${color}wlan0-down: ${downspeedgraph wlan0 10,40 AEA08E 9F907D} wlan0-up: ${upspeedgraph wlan0 10,40 AEA08E 9F907D}${color D7D3C5}  ${endif}${if_up eth0}|  ${color}eth0-down: ${downspeedgraph eth00 10,40 AEA08E 9F907D} eth0-up: ${upspeedgraph eth0 10,40 AEA08E 9F907D}${color D7D3C5}  ${endif}|  ${color}bat: ${color D7D3C5} ${battery_short} ${color}-${color D7D3C5} ${battery_time}
