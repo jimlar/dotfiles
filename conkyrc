@@ -32,7 +32,7 @@ own_window_colour 404040
 
 #font
 use_xft yes
-xftfont bauhaus:pixelsize=12
+xftfont bauhaus:pixelsize=10
 
 #to prevent window from moving
 use_spacer no
