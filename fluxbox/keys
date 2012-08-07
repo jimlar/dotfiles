@@ -122,7 +122,7 @@ OnTitlebar Mouse3 :WindowMenu
 
 # Jimmys stuffz
 Mod4 X :MaximizeWindow
-Mod4 Escape :ExecCommand xlock
+Mod4 Escape :ExecCommand xlock -mode pacman
 Mod4 Return :ExecCommand gnome-terminal
 
 Mod4 D :ExecCommand dmenu_run
