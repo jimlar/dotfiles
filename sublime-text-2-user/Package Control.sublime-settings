@@ -1,8 +1,9 @@
 {
-	"auto_upgrade_last_run": 1343732049,
+	"auto_upgrade_last_run": 1344540760,
 	"installed_packages":
 	[
 		"Package Control",
+		"SublimeREPL",
 		"Theme - Soda"
 	]
 }
