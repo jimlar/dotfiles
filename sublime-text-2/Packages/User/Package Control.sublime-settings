@@ -1,10 +1,12 @@
 {
-	"auto_upgrade_last_run": 1344627412,
+	"auto_upgrade_last_run": 1344680175,
 	"installed_packages":
 	[
 		"ERB Insert and Toggle Commands",
 		"Package Control",
 		"RubyTest",
+		"SideBarEnhancements",
+		"SideBarGit",
 		"SublimeREPL",
 		"Theme - Soda"
 	]

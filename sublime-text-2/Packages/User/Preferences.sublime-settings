@@ -1,6 +1,13 @@
 {
+	"close_windows_when_empty": true,
 	"color_scheme": "Packages/User/Railscasts.tmTheme",
-	"font_size": 11,
+	"drag_text": false,
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"save_on_focus_lost": true,
 	"theme": "Soda Dark.sublime-theme"
 }

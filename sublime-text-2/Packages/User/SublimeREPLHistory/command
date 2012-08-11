@@ -4,3 +4,11 @@
 -[1 2]
 -(stamp)
 -(stamp)
+-(system-coll? [])
+->
+-(system-coll? "aa")
+-[1 2]
+-(use graphie.testdata)
+-(use 'graphie.testdata)
+-(generate-testdata)
+-(generate-test-data)
