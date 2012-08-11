@@ -272,26 +272,10 @@
 					}
 				},
 				{
-					"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-					"settings":
-					{
-						"buffer_size": 31027,
-						"line_ending": "Unix"
-					}
-				},
-				{
 					"file": "/home/jimmy/projects/private/graphie/test/graphie/testdata.clj",
 					"settings":
 					{
 						"buffer_size": 292,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/jimmy/projects/private/graphie/test/graphie/receivertest.clj",
-					"settings":
-					{
-						"buffer_size": 1535,
 						"line_ending": "Unix"
 					}
 				},
@@ -301,6 +285,46 @@
 					{
 						"buffer_size": 728,
 						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/jimmy/projects/private/graphie/src/graphie/views/welcome.clj",
+					"settings":
+					{
+						"buffer_size": 1472,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Default.sublime-commands",
+					"settings":
+					{
+						"buffer_size": 463,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Default.sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 317,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Main.sublime-menu",
+					"settings":
+					{
+						"buffer_size": 2407,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/sublimerepl.py",
+					"settings":
+					{
+						"buffer_size": 16489,
+						"line_ending": "Windows"
 					}
 				}
 			],
@@ -336,12 +360,13 @@
 			},
 			"file_history":
 			[
+				"/home/jimmy/projects/private/graphie/test/graphie/receivertest.clj",
+				"/home/jimmy/dotfiles/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 				"/home/jimmy/dotfiles/sublime-text-2/Packages/User/Preferences.sublime-settings",
 				"/home/jimmy/.lein/profiles.clj",
 				"/home/jimmy/projects/private/graphie/README.md",
 				"/home/jimmy/projects/private/graphie/resources/public/js/graphie.js",
 				"/home/jimmy/projects/private/graphie/test/graphie/statstest.clj",
-				"/home/jimmy/projects/private/graphie/test/graphie/receivertest.clj",
 				"/home/jimmy/projects/private/graphie/src/graphie/storage.clj",
 				"/home/jimmy/projects/private/graphie/src/graphie/udp.clj",
 				"/home/jimmy/dotfiles/sublime-text-2/Packages/Default/Preferences.sublime-settings",
@@ -404,6 +429,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"                    {\"command\": \"repl_open\", \n                     \"caption\": \"Clojure\",\n                     \"id\": \"repl_clojure\",\n                     \"args\": {\n                        \"type\": \"subprocess\",\n                        \"encoding\": \"utf8\",\n                        \"cmd\": {\"windows\": [\"lein.bat\", \"repl\"],\n                                \"linux\": [\"lein\", \"repl\"],\n                                \"osx\":  [\"lein\", \"repl\"]},\n                        \"soft_quit\": \"\\n(. System exit 0)\\n\",\n                        \"cwd\": {\"windows\":\"c:/Clojure\", // where the lein.bat lives!\n                                \"linux\": \"$file_path\",\n                                \"osx\": \"$file_path\"},\n                        \"syntax\": \"Packages/Clojure/Clojure.tmLanguage\",\n                        \"external_id\": \"clojure\",\n                        \"extend_env\": {\"INSIDE_EMACS\": \"1\"}\n                        }\n                    },\n",
 					"(fact \"An empty message gives nil message\"\n  (decode-packet \"\")\n  => nil)\n",
 					"              :dev {\n                :plugins [[lein-midje \"2.0.0-SNAPSHOT\"]]\n              }\n",
 					"com",
@@ -433,7 +459,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
@@ -466,33 +492,6 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-							"settings":
-							{
-								"buffer_size": 31027,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										24657,
-										24662
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/JavaScript/JSON.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 7595.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
 							"file": "/home/jimmy/projects/private/graphie/test/graphie/testdata.clj",
 							"settings":
 							{
@@ -518,35 +517,7 @@
 							"type": "text"
 						},
 						{
-							"buffer": 3,
-							"file": "/home/jimmy/projects/private/graphie/test/graphie/receivertest.clj",
-							"settings":
-							{
-								"buffer_size": 1535,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1535,
-										1535
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Clojure/Clojure.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 215.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
+							"buffer": 2,
 							"file": "/home/jimmy/projects/private/graphie/project.clj",
 							"settings":
 							{
@@ -572,6 +543,144 @@
 								"zoom_level": 1.0
 							},
 							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/jimmy/projects/private/graphie/src/graphie/views/welcome.clj",
+							"settings":
+							{
+								"buffer_size": 1472,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										155,
+										155
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Clojure/Clojure.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Default.sublime-commands",
+							"settings":
+							{
+								"buffer_size": 463,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										231,
+										231
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Default.sublime-keymap",
+							"settings":
+							{
+								"buffer_size": 317,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										156,
+										156
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/config/Clojure/Main.sublime-menu",
+							"settings":
+							{
+								"buffer_size": 2407,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1775,
+										1775
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JavaScript/JSON.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 200.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/jimmy/dotfiles/sublime-text-2/Packages/SublimeREPL/sublimerepl.py",
+							"settings":
+							{
+								"buffer_size": 16489,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3587,
+										3587
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 1341.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
 						}
 					]
 				}
@@ -582,7 +691,7 @@
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"layout":
 			{
