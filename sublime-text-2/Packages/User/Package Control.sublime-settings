@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1344680175,
+	"auto_upgrade_last_run": 1345468727,
 	"installed_packages":
 	[
+		"CTags",
 		"ERB Insert and Toggle Commands",
 		"Package Control",
 		"RubyTest",
