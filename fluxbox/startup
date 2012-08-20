@@ -33,6 +33,7 @@ sh -c "sleep 2s; conky" &
 
 nm-applet &
 pidgin &
+skype &
 
 ~/.dropbox-dist/dropboxd &
 
