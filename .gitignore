@@ -3,6 +3,7 @@
 *.elc
 /fluxbox/log
 *.pyc
-/sublime-text-2/Settings/Session.sublime_session
+*.sublime_session
 /sublime-text-2/Backup
 *.cache
+RubyTest.last-run
