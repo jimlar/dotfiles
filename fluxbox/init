@@ -46,7 +46,7 @@ session.screen0.clickRaises:	true
 session.screen0.workspaceNames:	1,2,3,4,5,6,
 session.screen0.workspaces:	6
 session.screen0.autoRaise:	true
-session.screen0.maxIgnoreIncrement:	false
+session.screen0.maxIgnoreIncrement:	true
 session.screen0.strftimeFormat:	%l:%M
 session.screen0.edgeSnapThreshold:	10
 session.screen0.colPlacementDirection:	TopToBottom
