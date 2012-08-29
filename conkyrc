@@ -36,7 +36,7 @@ xftfont bauhaus:pixelsize=10
 
 #to prevent window from moving
 use_spacer no
-minimum_size 1440 0
+minimum_size 2560 0
 
 #mpd
 #mpd_host localhost
