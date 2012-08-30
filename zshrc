@@ -51,5 +51,11 @@ export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 export EDITOR=subl
 export BROWSER=chromium
 
+# Python virtual env
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into shell session
