@@ -9,5 +9,7 @@
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
-	"theme": "Soda Dark.sublime-theme"
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
