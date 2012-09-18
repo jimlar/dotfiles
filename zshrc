@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH=/home/jimmy/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/jimmy/.rvm/bin:/home/jimmy/bin/play:/home/jimmy/bin/flume/bin:/home/jimmy/bin/node_modules/less/bin
+export PATH=/home/jimmy/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/jimmy/.rvm/bin:/home/jimmy/bin/play:/home/jimmy/bin/flume/bin:/home/jimmy/bin/nodejs/bin
 
 source /etc/profile.d/apache-ant.sh
 
