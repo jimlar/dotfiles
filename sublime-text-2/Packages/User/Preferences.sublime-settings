@@ -2,7 +2,7 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/User/Railscasts.tmTheme",
 	"drag_text": false,
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -12,9 +12,4 @@
 	"tab_size": 2,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true
-
-//	,
-//  "font_face": "Anonymous Pro",
-//  "font_size": 10.5
-
 }

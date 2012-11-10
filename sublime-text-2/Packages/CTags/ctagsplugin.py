@@ -212,7 +212,7 @@ def find_with_scope(view, pattern, scope, start_pos=0, cond=True, flags=0):
     max_pos = view.size()
 
     while start_pos < max_pos:
-        f = view.find(pattern[:-4], start_pos, flags )
+        f = view.find(pattern[:-5] + "$", start_pos, flags )
 
         if not f or view.match_selector( f.begin(), scope) is cond:
             break
@@ -259,7 +259,7 @@ def scroll_to_tag(view, tag, hook=None):
         else:
             look_from = follow_tag_path(view, tag.tag_path, tag.ex_command)
 
-        symbol_region = view.find(tag.symbol, look_from, sublime.LITERAL)
+        symbol_region = view.find(tag.ex_command, look_from, sublime.LITERAL)
 
         select (
             view,

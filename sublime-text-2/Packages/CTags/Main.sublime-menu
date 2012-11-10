@@ -1,5 +1,58 @@
 [
     {
+        "id": "find",
+        "children":
+        [
+          {
+            "caption": "-",
+            "id": "find_tools_ctags"
+          },
+          {
+            "caption": "CTags",
+            "id": "ctags",
+            "children":
+            [
+              {
+                "command": "navigate_to_definition"
+              },
+              {
+                "command": "jump_back"
+              },
+              {
+                "command": "rebuild_tags"
+              },
+              {
+                "command": "show_symbols",
+                "context": [
+                  {
+                    "key": "selector",
+                    "match_all": true,
+                    "operand": "source -source.css",
+                    "operator": "equal"
+                  }
+                ]
+              },
+              {
+                //"argr_comment": "TODO",
+                "args": {
+                  "type": "multi"
+                },
+                "caption": "Show Symbols (multi)",
+                "command": "show_symbols",
+                "context": [
+                  {
+                    "key": "selector",
+                    "match_all": true,
+                    "operand": "source -source.css",
+                    "operator": "equal"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+    },
+    {
         "caption": "Preferences",
         "mnemonic": "n",
         "id": "preferences",
@@ -60,64 +113,43 @@
                                     "platform": "Linux"
                                 },
                                 "caption": "Key Bindings – User"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/CTags/Default.sublime-mousemap"
+                                },
+                                "caption": "Mouse Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (Windows).sublime-mousemap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Mouse Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (OSX).sublime-mousemap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Mouse Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (Linux).sublime-mousemap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Mouse Bindings – User"
                             }
                         ]
                     }
                 ]
             }
-        ]
-    },
-    {
-        "id": "find",
-        "children":
-        [
-          {
-            "caption": "-",
-            "id": "find_tools_ctags"
-          },
-          {
-            "caption": "CTags",
-            "id": "ctags",
-            "children":
-            [
-              {
-                "command": "navigate_to_definition"
-              }, 
-              {
-                "command": "jump_back"
-              },
-              {
-                "command": "rebuild_tags"
-              }, 
-              {
-                "command": "show_symbols", 
-                "context": [
-                  {
-                    "key": "selector", 
-                    "match_all": true, 
-                    "operand": "source -source.css", 
-                    "operator": "equal"
-                  }
-                ]
-              }, 
-              {
-                //"argr_comment": "TODO", 
-                "args": {
-                  "type": "multi"
-                }, 
-                "caption": "Show Symbols (multi)",
-                "command": "show_symbols", 
-                "context": [
-                  {
-                    "key": "selector", 
-                    "match_all": true, 
-                    "operand": "source -source.css", 
-                    "operator": "equal"
-                  }
-                ]
-              }
-            ]
-          }
         ]
     }
 ]
