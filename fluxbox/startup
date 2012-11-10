@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/jimmy/.Xmodmap"
+#xmodmap "/home/jimmy/.Xmodmap"
 #setxkbmap -layout se -model macintosh
 
 # Start gnome keyring for evolution - with SLIM now
@@ -27,6 +27,9 @@ xmodmap "/home/jimmy/.Xmodmap"
 
 # To enable modifying network settings
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Notifications
+/usr/lib/notification-daemon-1.0/notification-daemon &
 
 #sh- c "sleep 2s; fbsetbg -l" %
 sh -c "sleep 2s; conky" &
