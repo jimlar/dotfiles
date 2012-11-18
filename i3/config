@@ -13,16 +13,18 @@
 exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 # Startup programs
+exec dunst
 exec nm-applet
 exec pidgin
 exec ~/.dropbox-dist/dropboxd
+
 
 # Set background
 #exec_always qiv -z /home/jimmy/images/rossi-and-lorenzo.jpg
 
 
 
-# Main modifier (mac key)
+# Main modifier (win key)
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
@@ -44,6 +46,9 @@ bindsym $mod+Q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+
+# border changing
+bindsym $mod+b border toggle
 
 # change focus
 bindsym $mod+j focus left
@@ -94,6 +99,10 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindcode $mod+d focus child
+
+# Toggle workspace
+bindsym $mod+Tab workspace back_and_forth
+bindsym Mod1+Tab workspace back_and_forth
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -170,7 +179,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   status_command i3status
-  position top
+  position bottom
   mode hide
 }
 
@@ -181,3 +190,8 @@ client.focused          #333333 #333333 #ffffff #333333
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
+
+
+# App settings (use xprop to show properties of windows)
+for_window [class="^Chromium$"] border none
+
