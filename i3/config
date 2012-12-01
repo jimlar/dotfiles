@@ -35,7 +35,7 @@ font -misc-fixed-medium-r-normal--8-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # Lock screen
-bindsym $mod+x exec xlock
+bindsym $mod+x exec xlock -mode pacman
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
