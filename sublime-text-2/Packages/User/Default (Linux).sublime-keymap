@@ -17,6 +17,8 @@
 
 // CTags
 	{ "keys": ["ctrl+b"], "command": "navigate_to_definition"},
-	{ "keys": ["ctrl+alt+left"], "command": "jump_back"}
+	{ "keys": ["ctrl+alt+left"], "command": "jump_back"},
 
+// Sidebar
+  { "keys": ["ctrl+shift+0"], "command": "toggle_side_bar" }
 ]
