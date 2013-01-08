@@ -13,7 +13,7 @@
 exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 # Startup programs
-exec dunst
+#exec dunst # dmenu style notifications
 exec nm-applet
 exec pidgin
 exec ~/.dropbox-dist/dropboxd
