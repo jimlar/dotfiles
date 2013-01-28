@@ -4,6 +4,9 @@
 
 system.file_allocate.set = yes
 
+# Enable XMLRPC
+scgi_port = localhost:5000
+
 # Maximum and minimum number of peers to connect to per torrent.
 min_peers = 40
 max_peers = 100
