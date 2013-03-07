@@ -45,7 +45,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec PATH=/home/jimmy/bin:$PATH dmenu_run
 
 # border changing
 bindsym $mod+b border toggle
@@ -197,4 +197,5 @@ assign [class="^Chromium$"] 2
 
 # Window settings (use xprop to show properties of windows)
 for_window [class="^Chromium$"] border none
+#for_window [class="^jetbrains-idea$"] border none
 
