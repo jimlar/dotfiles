@@ -18,6 +18,8 @@ exec nm-applet
 exec pidgin
 exec ~/.dropbox-dist/dropboxd
 
+# Make Java behave nicely
+exec wmname LG3D
 
 # Set background
 #exec_always qiv -z /home/jimmy/images/rossi-and-lorenzo.jpg
