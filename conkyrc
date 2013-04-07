@@ -9,7 +9,6 @@ own_window_hints undecorate,sticky,skip_taskbar,skip_pager
 
 #borders
 draw_borders no
-border_margin 1
 
 #shades
 draw_shades yes
@@ -24,7 +23,10 @@ update_interval 0.2
 update_interval_on_battery 2
 
 #colour
-default_color  9f907d
+default_color  9F907D
+color1 9F907D
+color2 D7D3C5
+color3 AEA08E
 
 #default_shade_color 000000
 own_window_colour 404040
@@ -35,7 +37,7 @@ use_xft yes
 xftfont bauhaus:pixelsize=10
 
 #to prevent window from moving
-use_spacer no
+use_spacer none
 minimum_size 2560 0
 
 #mpd
@@ -43,4 +45,4 @@ minimum_size 2560 0
 #mpd_port 6600
 
 TEXT
- ${time %d %B} ${color D7D3C5}${time %H:%M}  |  ${color}cpu: ${color D7D3C5}${cpu}%  ${color}${cpugraph 8,80 AEA08E 9F907D}  ${color D7D3C5}${freq_g}/${freq_g 2}/${freq_g 3}/${freq_g 4}  |  ${color}mem: ${color D7D3C5}$mem/$memmax - $memperc%  |  ${color}wlan: ${upspeedgraph wlan0 8,40 AEA08E 9F907D}  ${downspeedgraph wlan0 8,40 AEA08E 9F907D}  |  ${color}eth: ${upspeedgraph eth0 8,40 AEA08E 9F907D}  ${downspeedgraph eth00 8,40 AEA08E 9F907D}  |  ${color}bat: ${color D7D3C5} ${battery_short} ${color}-${color D7D3C5} ${battery_time}
+ ${time %d %B} ${color2}${time %H:%M}  |  ${color}cpu:  ${color2}${cpu cpu0}%  |  ${color}mem:  ${color2}$mem  |  ${color}swap:  ${color2}${swap} |  ${color}disk i/o:  ${color2}${diskio}  |  ${color}wlan:  ${color2}${addr wlan0}  |  ${color}eth:  ${color2}${addr eth0}  |  ${color}bat:  ${color2} ${battery_short} ${color}-${color2} ${battery_time}
