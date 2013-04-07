@@ -48,7 +48,7 @@ alias emacs='emacs -nw'
 
 export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 
-export EDITOR='subl -w'
+export EDITOR='emacs -nw'
 export BROWSER=chromium
 
 # Python virtual env
