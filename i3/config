@@ -20,6 +20,11 @@ exec setxkbmap se
 # Key repeat
 exec xset r rate 170 40
 
+# Touchpad settings
+exec synclient TapButton1=0
+exec synclient TapButton2=0
+exec synclient TapButton3=0
+
 # Start pulseaudio
 exec pulseaudio --start
 
