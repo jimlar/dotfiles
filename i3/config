@@ -15,15 +15,15 @@
 #exec /usr/lib/gnome-settings-daemon/gnome-fallback-media-keys-helper
 
 # Keyboard layout
-exec setxkbmap se
+exec_always setxkbmap se
 
 # Key repeat
-exec xset r rate 170 40
+exec_always xset r rate 170 40
 
 # Touchpad settings
-exec synclient TapButton1=0
-exec synclient TapButton2=0
-exec synclient TapButton3=0
+exec_always synclient TapButton1=0
+exec_always synclient TapButton2=0
+exec_always synclient TapButton3=0
 
 # Start pulseaudio
 exec pulseaudio --start
@@ -35,7 +35,7 @@ exec pidgin
 exec ~/.dropbox-dist/dropboxd
 
 # Make Java behave nicely
-exec wmname LG3D
+exec_always wmname LG3D
 
 # Set background
 exec_always qiv -z /home/jimmy/images/rossi-and-lorenzo.jpg
@@ -59,7 +59,7 @@ bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
 bindsym XF86AudioMute exec amixer set Master toggle
 
-bindsym XF86Display exec arandr
+bindsym XF86Display exec xrandr --auto && arandr
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
