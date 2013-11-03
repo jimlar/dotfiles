@@ -28,7 +28,7 @@ ZSH_THEME="candy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # pip django
-plugins=(git git-flow github svn ruby gem rails3 rvm archlinux ssh-agent)
+plugins=(git git-flow github svn ruby gem rails3 rvm ssh-agent)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent id_rsa id_kth_git
@@ -39,9 +39,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH=/home/jimmy/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/jimmy/.rvm/bin:/home/jimmy/bin/play:/home/jimmy/bin/flume/bin:/home/jimmy/bin/nodejs/bin
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.rvm/bin:$HOME/bin/play:$HOME/bin/flume/bin:$HOME/bin/nodejs/bin
 
-source /etc/profile.d/apache-ant.sh
+#source /etc/profile.d/apache-ant.sh
 
 alias open=xdg-open
 alias emacs='emacs -nw'
@@ -53,7 +53,7 @@ export BROWSER=chromium
 
 # Python virtual env
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
