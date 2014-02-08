@@ -17,6 +17,9 @@
 # Keyboard layout
 exec_always setxkbmap se
 
+# Set caoslock to toggle between us and se layout
+#exec_always setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ca
+
 # Key repeat
 exec_always xset r rate 170 40
 exec_always xset b off
@@ -25,9 +28,9 @@ exec_always xset b off
 exec_always ~/bin/screens.sh
 
 # Touchpad settings
-exec_always synclient TapButton1=0
-exec_always synclient TapButton2=0
-exec_always synclient TapButton3=0
+#exec_always synclient TapButton1=0
+#exec_always synclient TapButton2=0
+#exec_always synclient TapButton3=0
 
 #focus_follows_mouse no
 
@@ -37,14 +40,15 @@ exec pulseaudio --start
 # Startup programs
 #exec dunst # dmenu style notifications
 exec nm-applet
-exec pidgin
-exec ~/.dropbox-dist/dropboxd
+#exec pidgin
+#exec ~/.dropbox-dist/dropboxd
 
 # Make Java behave nicely
 exec_always wmname LG3D
 
 # Set background
-exec_always qiv -z /home/jimmy/images/rossi-and-lorenzo.jpg
+#exec_always qiv -z /home/jimmyl/images/rossi-and-lorenzo.jpg
+exec_Always qiv -z /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
 
 
 # Main modifier (win key)
@@ -58,7 +62,8 @@ font -misc-fixed-medium-r-normal--8-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # Lock screen
-bindsym $mod+x exec xlock -mode pacman
+#bindsym $mod+x exec xlock -mode pacman
+bindsym $mod+x exec i3lock -c 000000
 
 # Media keys
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute

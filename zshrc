@@ -28,7 +28,7 @@ ZSH_THEME="candy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # pip django
-plugins=(git git-flow github svn ruby gem rails3 rvm ssh-agent)
+plugins=(git git-flow github svn ruby gem rails rvm ssh-agent)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent id_rsa id_kth_git
