@@ -238,15 +238,16 @@ for_window [class="^Chromium-browser$"] border none
 #for_window [class="^jetbrains-idea$"] border none
 
 # Workspace screen layout
-workspace 1 output DisplayPort-1
-workspace 2 output DisplayPort-0
-workspace 3 output DVI-0
+workspace 1 output VGA-0
+workspace 2 output DVI-D-0
+workspace 3 output DVI-D-1
 
-workspace 4 output DisplayPort-1
-workspace 5 output DisplayPort-0
-workspace 6 output DVI-0
+workspace 4 output DVI-D-0
+workspace 5 output DVI-D-0
+workspace 6 output DVI-D-0
+workspace 7 output DVI-D-0
+workspace 8 output DVI-D-0
+workspace 9 output DVI-D-0
+workspace 0 output DVI-D-0
 
-workspace 7 output DisplayPort-1
-workspace 8 output DisplayPort-0
-workspace 9 output DVI-0
 
