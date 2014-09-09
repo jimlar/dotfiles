@@ -59,4 +59,4 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
-source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/chruby.sh
