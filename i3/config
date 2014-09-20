@@ -76,6 +76,7 @@ bindsym XF86AudioMute exec amixer set Master toggle
 
 bindsym XF86Display exec xrandr --auto && arandr
 bindsym XF86HomePage exec xrandr --auto && arandr
+bindsym XF86AudioPlay exec xrandr --auto && arandr
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
