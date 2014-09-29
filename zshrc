@@ -60,3 +60,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
 #source /usr/local/share/chruby/chruby.sh
+
+# Autoenv
+source ~/.autoenv/activate.sh
