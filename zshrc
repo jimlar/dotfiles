@@ -62,4 +62,4 @@ source /usr/bin/virtualenvwrapper.sh
 #source /usr/local/share/chruby/chruby.sh
 
 # Autoenv
-source ~/.autoenv/activate.sh
+[[ -f ~/.autoenv/activate.sh ]] && source ~/.autoenv/activate.sh
