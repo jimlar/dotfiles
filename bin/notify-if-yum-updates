@@ -1,5 +1,9 @@
 #!/bin/bash
 
+APP_NAME=yum
+
+notify-send -a $APP_NAME -u low "Checking for system updates"
+
 YUM_OUTPUT=$(yum -q check-updates 2>&1)
 YUM_EXIT_CODE=$?
 
@@ -7,14 +11,15 @@ case "$YUM_EXIT_CODE" in
 
 0)
   echo No updates available
+  notify-send -a $APP_NAME -u low "No system updates"
   ;;
 
 100)
   echo Updates available
   PACKAGES=$(echo $YUM_OUTPUT | awk '{print $1}')
-  notify-send -u critical "System updates available:\n $PACKAGES"
+  notify-send -a $APP_NAME -u critical "System updates available:\n $PACKAGES"
   ;;
 *)
-  notify-send -u critical "Yum failed when checking for updates: $YUM_OUTPUT"
+  notify-send -a $APP_NAME -u critical "Yum failed when checking for updates: $YUM_OUTPUT"
   ;;
 esac
