@@ -38,7 +38,7 @@ exec_always ~/bin/screen-layout.sh
 exec pulseaudio --start
 
 # Startup programs
-#exec dunst # dmenu style notifications
+exec dunst # dmenu style notifications
 exec nm-applet
 #exec pidgin
 #exec ~/.dropbox-dist/dropboxd
