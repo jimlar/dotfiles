@@ -247,6 +247,7 @@ for_window [class="^Chromium-browser$"] border none
 workspace 1 output VGA-0
 workspace 1 output DP-0-2
 workspace 2 output DVI-D-0
+workspace 2 output DP-0-1
 workspace 3 output DVI-D-1
 
 workspace 4 output DVI-D-0
