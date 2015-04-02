@@ -25,7 +25,7 @@ exec_always xset r rate 170 40
 exec_always xset b off
 
 # Screen setup
-exec_always ~/bin/screen-layout.sh
+#exec_always ~/bin/screen-layout.sh
 
 # Touchpad settings
 #exec_always synclient TapButton1=0
