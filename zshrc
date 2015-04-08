@@ -47,6 +47,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sb
 
 alias open=xdg-open
 alias emacs='emacs -nw'
+alias dc=docker-compose
 
 export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 
