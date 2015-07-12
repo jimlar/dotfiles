@@ -1,11 +1,11 @@
 #!/bin/bash
 
 export DISPLAY=:0
-APP_NAME=yum
+APP_NAME=dnf
 
 notify-send -a $APP_NAME -u low "Checking for system updates"
 
-YUM_OUTPUT=$(yum -q check-updates 2>&1)
+YUM_OUTPUT=$(dnf -q check-update 2>&1)
 YUM_EXIT_CODE=$?
 
 case "$YUM_EXIT_CODE" in
