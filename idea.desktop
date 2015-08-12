@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=IntelliJ IDEA
 Comment=A Java development environment
-Exec=/home/jimmy/bin/idea
+Exec=/home/jimmyl/bin/idea
 Terminal=false
 Type=Application
 Icon=intellij-idea

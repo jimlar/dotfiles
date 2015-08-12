@@ -28,7 +28,7 @@ ZSH_THEME="candy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # pip django
-plugins=(git git-flow github svn ruby gem rails3 rvm archlinux ssh-agent)
+plugins=(git git-flow github svn ruby gem rails rvm ssh-agent)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent id_rsa id_kth_git
@@ -38,24 +38,29 @@ source $ZSH/oh-my-zsh.sh
 # Turn off autocorrect
 unsetopt correct_all
 
-# Customize to your needs...
-export PATH=/home/jimmy/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/jimmy/.rvm/bin:/home/jimmy/bin/play:/home/jimmy/bin/flume/bin:/home/jimmy/bin/nodejs/bin
+export SPLUNK_HOME=/opt/splunk
 
-source /etc/profile.d/apache-ant.sh
+# Customize to your needs...
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.rvm/bin:$HOME/bin/play:$HOME/bin/flume/bin:$HOME/bin/nodejs/bin:$PATH
+
+#source /etc/profile.d/apache-ant.sh
 
 alias open=xdg-open
 alias emacs='emacs -nw'
+alias dc=docker-compose
 
 export FLUME_CONF_DIR=/home/jimmy/bin/flume/conf
 
-export EDITOR='subl -w'
+export EDITOR='emacs -nw'
 export BROWSER=chromium
 
 # Python virtual env
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
+#source /usr/local/share/chruby/chruby.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into shell session
+# Autoenv
+[[ -f ~/.autoenv/activate.sh ]] && source ~/.autoenv/activate.sh

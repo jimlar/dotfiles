@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export DISPLAY=:0
+APP_NAME=dnf
+
+notify-send -a $APP_NAME -u low "Checking for system updates"
+
+YUM_OUTPUT=$(dnf -q check-update 2>&1)
+YUM_EXIT_CODE=$?
+
+case "$YUM_EXIT_CODE" in
+
+0)
+  notify-send -a $APP_NAME -u low "No system updates"
+  ;;
+
+100)
+  PACKAGES=$(echo $YUM_OUTPUT | awk '{print $1}')
+  notify-send -a $APP_NAME -u critical "System updates available:\n $PACKAGES"
+  ;;
+*)
+  notify-send -a $APP_NAME -u critical "Yum failed when checking for updates: $YUM_OUTPUT"
+  ;;
+esac

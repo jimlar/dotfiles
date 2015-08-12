@@ -10,18 +10,45 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # To get nicer evolution 
-exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+#exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+#exec /usr/lib/gnome-settings-daemon/gnome-fallback-background-helper
+#exec /usr/lib/gnome-settings-daemon/gnome-fallback-media-keys-helper
+
+# Keyboard layout
+exec_always setxkbmap se
+
+# Set caoslock to toggle between us and se layout
+#exec_always setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ca
+
+# Key repeat
+exec_always xset r rate 170 40
+exec_always xset b off
+
+# Screen setup
+#exec_always ~/bin/screen-layout.sh
+
+# Touchpad settings
+#exec_always synclient TapButton1=0
+#exec_always synclient TapButton2=0
+#exec_always synclient TapButton3=0
+
+#focus_follows_mouse no
+
+# Start pulseaudio
+exec pulseaudio --start
 
 # Startup programs
-#exec dunst # dmenu style notifications
+exec dunst # dmenu style notifications
 exec nm-applet
-exec pidgin
-exec ~/.dropbox-dist/dropboxd
+#exec pidgin
+#exec ~/.dropbox-dist/dropboxd
 
+# Make Java behave nicely
+exec_always wmname LG3D
 
 # Set background
-#exec_always qiv -z /home/jimmy/images/rossi-and-lorenzo.jpg
-
+#exec_always qiv -z /home/jimmyl/images/rossi-and-lorenzo.jpg
+exec_Always qiv -z /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
 
 
 # Main modifier (win key)
@@ -35,7 +62,21 @@ font -misc-fixed-medium-r-normal--8-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # Lock screen
-bindsym $mod+x exec xlock -mode pacman
+#bindsym $mod+x exec xlock -mode pacman
+bindsym $mod+x exec i3lock -c 000000
+
+# Brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 -time 1 -steps 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 -time 1 -steps 1
+
+# Media keys
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer set Master 5%- unmute
+bindsym XF86AudioMute exec amixer set Master toggle
+
+bindsym XF86Display exec xrandr --auto && arandr
+bindsym XF86HomePage exec xrandr --auto && arandr
+bindsym XF86AudioPlay exec xrandr --auto && arandr
 
 # start a terminal
 bindsym $mod+Return exec gnome-terminal
@@ -45,7 +86,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec PATH=/home/jimmy/bin:$PATH dmenu_run
 
 # border changing
 bindsym $mod+b border toggle
@@ -142,31 +183,32 @@ mode "resize" {
   # They resize the border in the direction you pressed, e.g.
   # when pressing left, the window is resized so that it has
   # more space on its left
+  set $resize_step 2
 
-  bindsym j resize shrink left 10 px or 10 ppt
-  bindsym Shift+J resize grow   left 10 px or 10 ppt
+  bindsym j resize shrink left $resize_step px or $resize_step ppt
+  bindsym Shift+J resize grow   left $resize_step px or $resize_step ppt
 
-  bindsym k resize shrink down 10 px or 10 ppt
-  bindsym Shift+K resize grow   down 10 px or 10 ppt
+  bindsym k resize shrink down $resize_step px or $resize_step ppt
+  bindsym Shift+K resize grow   down $resize_step px or $resize_step ppt
 
-  bindsym l resize shrink up 10 px or 10 ppt
-  bindsym Shift+L resize grow   up 10 px or 10 ppt
+  bindsym l resize shrink up $resize_step px or $resize_step ppt
+  bindsym Shift+L resize grow   up $resize_step px or $resize_step ppt
 
-  bindsym odiaeresis resize shrink right 10 px or 10 ppt
-  bindsym Shift+Odiaeresis resize grow   right 10 px or 10 ppt
+  bindsym odiaeresis resize shrink right $resize_step px or $resize_step ppt
+  bindsym Shift+Odiaeresis resize grow   right $resize_step px or $resize_step ppt
 
           # same bindings, but for the arrow keys
-  bindsym Left resize shrink left 10 px or 10 ppt
-  bindsym Shift+Left resize grow   left 10 px or 10 ppt
+  bindsym Left resize shrink left $resize_step px or $resize_step ppt
+  bindsym Shift+Left resize grow   left $resize_step px or $resize_step ppt
 
-  bindsym Down resize shrink down 10 px or 10 ppt
-  bindsym Shift+Down resize grow   down 10 px or 10 ppt
+  bindsym Down resize shrink down $resize_step px or $resize_step ppt
+  bindsym Shift+Down resize grow   down $resize_step px or $resize_step ppt
 
-  bindsym Up resize shrink up 10 px or 10 ppt
-  bindsym Shift+Up resize grow   up 10 px or 10 ppt
+  bindsym Up resize shrink up $resize_step px or $resize_step ppt
+  bindsym Shift+Up resize grow   up $resize_step px or $resize_step ppt
 
-  bindsym Right resize shrink right 10 px or 10 ppt
-  bindsym Shift+Right resize grow   right 10 px or 10 ppt
+  bindsym Right resize shrink right $resize_step px or $resize_step ppt
+  bindsym Shift+Right resize grow   right $resize_step px or $resize_step ppt
 
   # back to normal: Enter or Escape
   bindsym Return mode "default"
@@ -178,9 +220,12 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+  font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#  font -misc-fixed-medium-r-normal--20-200-75-75-C-100-iso10646-1
   status_command i3status
   position bottom
-  mode hide
+#  mode hide
+  tray_output primary
 }
 
 # Colors
@@ -193,8 +238,26 @@ client.urgent           #2f343a #900000 #ffffff #900000
 
 
 # Window assignments
-assign [class="^Chromium$"] 2
+#assign [class="^Chromium$"] 2
 
 # Window settings (use xprop to show properties of windows)
 for_window [class="^Chromium$"] border none
+for_window [class="^Chromium-browser$"] border none
+#for_window [class="^jetbrains-idea$"] border none
+
+# Workspace screen layout
+workspace 1 output VGA-0
+workspace 1 output DP-0-2
+workspace 2 output DVI-D-0
+workspace 2 output DP-0-1
+workspace 3 output DVI-D-1
+
+workspace 4 output DVI-D-0
+workspace 5 output DVI-D-0
+workspace 6 output DVI-D-0
+workspace 7 output DVI-D-0
+workspace 8 output DVI-D-0
+workspace 9 output DVI-D-0
+workspace 0 output DVI-D-0
+
 
