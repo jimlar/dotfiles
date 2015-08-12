@@ -6,6 +6,7 @@ system.file_allocate.set = yes
 
 # Enable XMLRPC
 scgi_port = localhost:5000
+#scgi_local = /home/jimmy/.rtorrent/rpc.socket
 
 # Maximum and minimum number of peers to connect to per torrent.
 min_peers = 40
