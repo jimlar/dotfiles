@@ -38,6 +38,11 @@ source $ZSH/oh-my-zsh.sh
 # Turn off autocorrect
 unsetopt correct_all
 
+# Load kubectl completion
+autoload bashcompinit
+bashcompinit
+source $HOME/dotfiles/kubectl-completion.sh
+
 export SPLUNK_HOME=/opt/splunk
 
 # Customize to your needs...
