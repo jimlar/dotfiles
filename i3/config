@@ -48,7 +48,7 @@ exec_always wmname LG3D
 
 # Set background
 #exec_always qiv -z /home/jimmyl/images/rossi-and-lorenzo.jpg
-exec_Always qiv -z /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
+exec_always qiv -y /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
 
 
 # Main modifier (win key)
@@ -251,7 +251,7 @@ workspace 1 output DP-0-2
 workspace 1 output DisplayPort-1
 workspace 2 output DVI-D-0
 workspace 2 output DP-0-1
-workspace 2 output DisplayPort-0
+workspace 2 output DVI-0
 workspace 3 output DVI-D-1
 
 workspace 4 output DVI-0

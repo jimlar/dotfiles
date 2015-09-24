@@ -39,9 +39,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Load kubectl completion
-autoload bashcompinit
-bashcompinit
-source $HOME/dotfiles/kubectl-completion.sh
+#autoload bashcompinit
+#bashcompinit
+#source $HOME/dotfiles/kubectl-completion.sh
 
 export SPLUNK_HOME=/opt/splunk
 
