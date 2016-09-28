@@ -1,0 +1,3 @@
+#!/bin/sh
+
+google-chrome '-app=https://tri-sto-ex01.trioptima.local/owa/#path=/mail'
