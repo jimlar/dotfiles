@@ -48,8 +48,8 @@ exec_always wmname LG3D
 
 # Set background
 #exec_always qiv -z /home/jimmyl/images/rossi-and-lorenzo.jpg
-exec_always qiv -y /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
-
+#exec_always qiv -y /home/jimmyl/dotfiles/fluxbox/backgrounds/embrace_your_fear_by_rmujumdar-d5cbyns.jpg 
+exec_always xsetroot -solid '#000000'
 
 # Main modifier (win key)
 set $mod Mod4
