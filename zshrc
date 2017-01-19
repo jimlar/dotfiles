@@ -50,6 +50,9 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sb
 
 export PATH=$PATH:/usr/local/go/bin
 
+# Pipsi
+export PATH=$PATH:${HOME}/.local/bin
+
 #source /etc/profile.d/apache-ant.sh
 
 alias open=xdg-open
