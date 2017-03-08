@@ -24,6 +24,10 @@ exec_always setxkbmap se
 exec_always xset r rate 170 40
 exec_always xset b off
 
+# Load X settings
+#exec_always xrdb -merge ~/.Xresources
+#exec_always xrandr --dpi 120
+
 # Screen setup
 #exec_always ~/bin/screen-layout.sh
 
