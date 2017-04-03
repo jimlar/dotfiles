@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Web Mail
+Comment=The web mail
+Exec=/home/jimmyl/bin/web-mail
+Terminal=false
+Type=Application
+Icon=mail
+StartupNotify=true

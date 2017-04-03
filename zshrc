@@ -31,7 +31,7 @@ ZSH_THEME="candy"
 plugins=(git git-flow github svn ruby gem rails rvm ssh-agent)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent id_rsa id_kth_git
+# zstyle :omz:plugins:ssh-agent id_rsa id_kth_git
 
 source $ZSH/oh-my-zsh.sh
 
