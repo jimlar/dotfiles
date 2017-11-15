@@ -48,7 +48,11 @@ export SPLUNK_HOME=/opt/splunk
 # Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.rvm/bin:$HOME/bin/play:$HOME/bin/flume/bin:$HOME/bin/nodejs/bin:$PATH
 
+# Go Path
 export PATH=$PATH:/usr/local/go/bin
+
+# Cabal (Haskell) Path
+export PATH=$PATH:$HOME/.cabal/bin
 
 # Pipsi
 export PATH=$PATH:${HOME}/.local/bin
