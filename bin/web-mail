@@ -1,3 +1,4 @@
 #!/bin/sh
 
-google-chrome '-app=https://tri-sto-ex03.trioptima.local/owa/#path=/mail'
+google-chrome '-app=https://owa.trioptima.local'
+#google-chrome '-app=https://tri-sto-ex03.trioptima.local/owa/#path=/mail'
