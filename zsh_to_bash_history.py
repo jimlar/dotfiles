@@ -26,4 +26,4 @@ while i < len(lines):
         parts = line.split(":")
         print("#" + parts[1].strip())
         time, command = parts[2].split(";", 1)
-        print("#" + command.strip())
+        print(command.strip())
