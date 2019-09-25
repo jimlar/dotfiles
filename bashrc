@@ -87,3 +87,7 @@ alias ls='ls --color=auto'
 alias open=xdg-open
 alias emacs='emacs -nw'
 alias dc=docker-compose
+
+
+bind '"\e[6~": menu-complete'
+bind '"\e[5~": menu-complete-backward'
