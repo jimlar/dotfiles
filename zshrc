@@ -70,7 +70,7 @@ export BROWSER=chromium
 
 # Python virtual env
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
