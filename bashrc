@@ -74,11 +74,16 @@ function __powerline_kubecontext_prompt {
   [[ -n "${context_name}" ]] && echo "${context_name^^}|$(__oslogin_prompt_color ${orig_context_name})"
 }
 
-
+#
+# Personal aliases and env stuff
+#
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
-export EDITOR=vim
-export GOPATH=~/go
-alias dc=docker-compose
+export EDITOR='emacs -nw'
+#export GOPATH=~/go
+export PATH=$HOME/bin:$PATH
+
 alias ls='ls --color=auto'
-alias tigs='tig status'
+alias open=xdg-open
+alias emacs='emacs -nw'
+alias dc=docker-compose
