@@ -5,9 +5,9 @@ export OSH=$HOME/.oh-my-bash
 # it'll load a random theme each time that oh-my-bash is loaded.
 OSH_THEME="powerline-multiline"
 
-POWERLINE_LEFT_PROMPT="user_info oslogin kubecontext scm cwd"
+POWERLINE_LEFT_PROMPT="user_info python_venv oslogin kubecontext scm cwd"
 
-POWERLINE_LEFT_PROMPT="oslogin kubecontext scm cwd"
+POWERLINE_LEFT_PROMPT="python_venv oslogin kubecontext scm cwd"
 POWERLINE_RIGHT_PROMPT="clock user_info"
 
 
@@ -88,6 +88,12 @@ alias open=xdg-open
 alias emacs='emacs -nw'
 alias dc=docker-compose
 
+# Python virtual env
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
 
+# Menu completion with pgup/pgdown
 bind '"\e[6~": menu-complete'
 bind '"\e[5~": menu-complete-backward'
