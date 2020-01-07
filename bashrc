@@ -1,3 +1,10 @@
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+
 # Path to your oh-my-bash installation.
 export OSH=$HOME/.oh-my-bash
 
