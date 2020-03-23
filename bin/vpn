@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo openconnect --protocol=gp gp.trioptima.com -v -u jimmyl --servercert pin-sha256:wYOgmhixFCRqIumn55Iwu+SHrP2paraGIxH1cWjo21c=
