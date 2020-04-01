@@ -1,3 +1,15 @@
 #!/bin/bash
 
-sudo openconnect --protocol=gp gp.trioptima.com -v -u jimmyl --servercert pin-sha256:wYOgmhixFCRqIumn55Iwu+SHrP2paraGIxH1cWjo21c=
+
+case $1 in
+    off)
+	echo "Stopping VPN..."
+	#sudo killall openconnect
+	globalprotect disconnect
+	;;
+    *)
+	echo "Starting VPN..."
+	#sudo openconnect --protocol=gp gp.trioptima.com -v -u jimmyl --servercert pin-sha256:wYOgmhixFCRqIumn55Iwu+SHrP2paraGIxH1cWjo21c=
+	globalprotect connect -p vpn.trioptima.com
+	;;
+esac
