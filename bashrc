@@ -90,6 +90,15 @@ export EDITOR='emacs -nw'
 #export GOPATH=~/go
 export PATH=$HOME/bin:$PATH
 
+# Add istio to PATH
+export PATH=$PATH:$HOME/.istioctl/bin
+
+# Add go to PATH
+export PATH=$PATH:/usr/local/go/bin
+
+# Add private go repo
+export GOPRIVATE="stash.trioptima.net"
+
 alias ls='ls --color=auto'
 alias open=xdg-open
 alias emacs='emacs -nw'
