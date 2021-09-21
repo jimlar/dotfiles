@@ -94,7 +94,9 @@ export PATH=$HOME/bin:$PATH
 export PATH=$PATH:$HOME/.istioctl/bin
 
 # Add go to PATH
+
 export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin
+
 
 # Add private go repo
 export GOPRIVATE="stash.trioptima.net"
