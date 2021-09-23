@@ -78,3 +78,5 @@ source /usr/bin/virtualenvwrapper.sh
 
 # Autoenv
 [[ -f ~/.autoenv/activate.sh ]] && source ~/.autoenv/activate.sh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

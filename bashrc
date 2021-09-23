@@ -94,7 +94,7 @@ export PATH=$HOME/bin:$PATH
 export PATH=$PATH:$HOME/.istioctl/bin
 
 # Add go to PATH
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin
 
 # Add private go repo
 export GOPRIVATE="stash.trioptima.net"
@@ -113,3 +113,5 @@ source /usr/bin/virtualenvwrapper.sh
 # Menu completion with pgup/pgdown
 bind '"\e[6~": menu-complete'
 bind '"\e[5~": menu-complete-backward'
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
