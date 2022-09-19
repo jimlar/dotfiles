@@ -97,7 +97,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec PATH=/home/jimmy/bin:$PATH dmenu_run
+bindsym $mod+d exec PATH=/home/jimmy/bin:/home/jimmyl/bin:$PATH dmenu_run
 
 # border changing
 bindsym $mod+b border toggle
