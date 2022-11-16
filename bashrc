@@ -88,7 +88,7 @@ export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR='emacs -nw'
 #export GOPATH=~/go
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:/home/jimmyl/.local/bin:$PATH
 
 # Add istio to PATH
 export PATH=$PATH:$HOME/.istioctl/bin
